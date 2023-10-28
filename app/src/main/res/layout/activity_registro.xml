@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:text="Registrate" />
+
+    <EditText
+        android:id="@+id/etNombreR"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/etApellidoR"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/etNombreR"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Apellido" />
+
+    <EditText
+        android:id="@+id/etCorreoR"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/etApellidoR"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Correo" />
+
+    <EditText
+        android:id="@+id/etNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCorreoR"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Numero" />
+
+
+    <EditText
+        android:id="@+id/etContraseniaR"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/etNumero"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="contraseñia" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_below="@+id/etContraseniaR"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrate" />
+</RelativeLayout>

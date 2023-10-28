@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RvActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_marginTop="60dp"
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lista de Tareas" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTareas"
+                android:layout_below="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/rvPersonas"
+                android:id="@+id/btnAdd"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:textSize="32dp"
+                android:text="+" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
